@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zen Focus | Deep Work Dashboard</title>
+    <meta name="description" content="A minimalist, glassmorphic productivity dashboard featuring a Pomodoro timer and task management.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container glass">
+        <!-- Timer -->
+        <main class="timer-section">
+            <div class="timer-display" id="timer">25:00</div>
+            <div class="timer-controls">
+                <button id="start-btn">Start Focus</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </main>
+
+        <!-- Tasks -->
+        <aside class="tasks-section glass">
+            <h2>Today's Intentions</h2>
+            <div class="task-input-group">
+                <input type="text" id="task-input" placeholder="What will you achieve?">
+                <button class="add-btn" id="add-btn">+</button>
+            </div>
+            <ul class="task-list" id="task-list">
+                <!-- Tasks will appear here -->
+            </ul>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
